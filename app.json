@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "my-movie-app",
-    "slug": "my-movie-app",
+    "name": "CineSpark",
+    "slug": "CineSpark",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/images/logo.png",
+    "scheme": "CineSpark",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

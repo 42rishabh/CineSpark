@@ -8,6 +8,8 @@ import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
+import Icon from 'react-native-vector-icons/Feather';
+
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
@@ -30,14 +32,35 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={20} name="house.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="anime"
+        options={{
+          title: 'Anime',
+          tabBarIcon: ({ color }) => <IconSymbol size={20} name="film.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="songs"
+        options={{
+          title: 'Songs',
+          tabBarIcon: ({ color }) => <IconSymbol size={20} name="music.note" color={color} />,
         }}
       />
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Downloads',
+          tabBarIcon: ({ color }) => <Icon size={20} name="arrow-down" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color }) => <IconSymbol size={20} name="person.fill" color={color} />,
         }}
       />
     </Tabs>
