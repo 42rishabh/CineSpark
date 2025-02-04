@@ -19,9 +19,6 @@ export default function TabTwoScreen() {
     >
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Recently Viewed</ThemedText>
-        <TouchableOpacity style={styles.button} onPress={() => alert('Button Pressed!')}>
-          <Text style={styles.buttonText}>View More</Text>
-        </TouchableOpacity>
       </ThemedView>
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.movieContainer}>
